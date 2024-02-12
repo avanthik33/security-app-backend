@@ -7,8 +7,10 @@ router.post("/send",async(req,res)=>{
   let data=req.body
   let userModelObj=new userModel(data)
   await userModelObj.save()
-  res.json()
+  res.json({status:"success"})
 })
+
+
 
 
 module.exports=router

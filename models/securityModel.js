@@ -15,4 +15,4 @@ const securityModel=new mongoose.Schema({
   }
 })
 
-module.exports=mongoose.Schema("securityCollection",securityModel)
+module.exports=mongoose.model("securityCollection",securityModel)
